@@ -1,0 +1,194 @@
+    1  ld
+    2  cd ../
+    3  ll
+    4  pwd
+    5  ll
+    6  cd root/
+    7  ll
+    8  id
+    9  whoami
+   10  adduser cahdna
+   11  id cahdna
+   12  cd /home/cahdna
+   13  ll
+   14  pwd
+   15  adduser chandan
+   16  cd /home/
+   17  ll
+   18  cd 
+   19  cd ../
+   20  ll
+   21   
+   22  cd /bqq
+   23  cd /bin
+   24  ll | grep ls
+   25  cd /sbin
+   26  ll | grep add
+   27  su - chandan 
+   28  cd /proc/
+   29  ll
+   30  cd /mnt/
+   31  ll
+   32  cat /etc/os-release 
+   33  cat /etc/ssh/sshd_config
+   34  .
+   35  cd /home/
+   36  ll
+   37  su - chandan 
+   38  cd
+   39  id
+   40  touch file.txt
+   41  touch abc{1..100}.txt
+   42  ll
+   43  cat > file.txt
+   44  cat file.txt 
+   45  vi file.txt 
+   46  vim file.txt 
+   47  echo "i have done" > new.ttx
+   48  cat new.ttx 
+   49  echo > file.txt 
+   50  cat file.txt 
+   51  rm file.txt 
+   52  ll 
+   53  mkdir 
+   54  man --help
+   55  man ls
+   56  ls 
+   57  ls -l
+   58  ls -lll
+   59  ll
+   60  cat .vimrc 
+   61  rm -rf * 
+   62  ll
+   63  ls
+   64  ll
+   65  ls -lA
+   66  touch ..file.txt
+   67  ls -lA
+   68  fallocate -l 2G file.txt
+   69  ll -ltr
+   70  man fallocate
+   71  ll -ltr
+   72  ll -h
+   73  rm file.txt 
+   74  ll
+   75  ll -d /root/
+   76  ll -d /opt/
+   77  ls -li
+   78  ls -i
+   79  ll
+   80  touch file.txt
+   81  ll
+   82  ll -i
+   83  cd /s
+   84  cd /sbin
+   85  ll
+   86  pwd
+   87  ll | nl
+   88  ll | grep apt
+   89  ll
+   90  which apt
+   91  which ls
+   92  cd /usr/bin/
+   93  ll | grep apt
+   94  ll | grep ls
+   95  cd
+   96  man mkdir 
+   97  mkdir -v d1
+   98  mkdir  d1/d2/d3/d4
+   99  mkdir  -p d1/d2/d3/d4
+  100  man mkdir 
+  101  pwd
+  102  ll -R 
+  103  ll -R d1/
+  104  touch d1/d2/d3/d4/file{1..100}.txt
+  105  ll d1/d2/d3/d4/file{1..100}.txt
+  106  mkdir root
+  107  cd root/
+  108  ll
+  109  cd
+  110  ll
+  111  cd root/
+  112  pwd
+  113  cd
+  114  man rm 
+  115  rm file.txt 
+  116  vim file.xtx
+  117  rm -f file.xtx 
+  118  ll
+  119  rm d1/
+  120  rm -f d1/
+  121  rm -rf d1/
+  122  mkdir -p d1/d2/d3
+  123  ll
+  124  rm ..file.txt 
+  125  touch file.txt
+  126  ll
+  127  pwd
+  128  man  cp
+  129  cp file.txt d1/
+  130  ll d1/
+  131  cp -r d1/ /opt/
+  132  cd /opt/
+  133  ll
+  134  ll -R d1/
+  135  cd
+  136  ll
+  137  chown chandan:chandan file.txt 
+  138  ll
+  139  cp -pr file.txt /tmp/
+  140  ll /tmp/
+  141  pwd
+  142  ll 
+  143  ll /tmp/
+  144  date 
+  145  cp -pr file.txt /bin
+  146  ll /bin
+  147  ll /usr/bin/
+  148  ll /usr/bin/ | grep file.txt 
+  149  date 
+  150  rm /tmp/file.txt 
+  151  cp  file.txt /tmp/
+  152  ll /tmp/
+  153  man cp 
+  154  cp --help
+  155  rm  /tmp/file.txt 
+  156  mv file.txt /tmp/
+  157  ll
+  158  ll /tmp/
+  159  man mv
+  160  ll /opt/
+  161  mv /opt/d1/ /tmp/
+  162  ll /opt/
+  163  ll /tmp/
+  164  history 
+  165  man wc
+  166  wc -l
+  167  ll
+  168  vim file.txt
+  169  wc file.txt 
+  170  cat -n file.txt 
+  171  cat  file.txt | nl
+  172  cat file.txt 
+  173  cat file.txt | nl
+  174  cat file.txt  > file2.txt
+  175  cat file2.txt 
+  176  vim file2.txt 
+  177  cat -n file2.txt 
+  178  cat -S file2.txt 
+  179  cat -s file2.txt 
+  180  cat -s file2.txt  | nl
+  181  cat -ns file2.txt 
+  182  cat -T /etc/hosts
+  183  man wc
+  184  cat -n file.txt 
+  185  wc -l  file.txt 
+  186  wc -lc  file.txt 
+  187  ll
+  188  mkdir d1
+  189  ll
+  190  cd /dev/
+  191  ll
+  192  cd
+  193  history 
+  194  history  > practice1.txt
