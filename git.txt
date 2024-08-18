@@ -1,0 +1,584 @@
+    1  kubectl get node
+    2  free -h
+    3  kubectl get node
+    4  ll .kube/
+    5  cp /etc/kubernetes/admin.conf ~/.kube/config
+    6  kubectl get node
+    7  ssh kworker2 
+    8  kubectl run jenkins --image=jenkins/jenkins:latest --port 8080
+    9  kubectl get pods 
+   10  kubectl get pods -w
+   11  kubectl get pods 
+   12  kubectl expose pod jenkins --type=NodePort --name jekins-svc
+   13  kubectl get svc '
+   14  kubectl get svc 
+   15  ip r
+   16  kubectl exec pod jenkins -- /bin/bash 
+   17  kubectl exec -it jenkins -- /bin/bash
+   18  kubectl get pods 
+   19  kubectl get pods -o wide 
+   20  kubectl delete pod jenkins 
+   21  vim jenkins-deployment.yaml
+   22  kubectl get svc 
+   23  kubectl delete svc jekins-svc 
+   24  ll
+   25  vim jenkins-deployment.yaml 
+   26  kubectl apply -f jenkins-deployment.yaml 
+   27  kubectl get deploy 
+   28  kubectl get pods 
+   29  kubectl get deploy 
+   30  kubectl get pods 
+   31  kubectl get svc 
+   32  vim jenkins-deployment.yaml 
+   33  kubectl get pods 
+   34  kubectl get svc 
+   35  ip r
+   36  kubectl exec jenkins-5fcd5b99f8-sh7t6 -it -- /bin/bash 
+   37  kubectl get pods 
+   38  ld
+   39  cd ../
+   40  ll
+   41  pwd
+   42  ll
+   43  cd root/
+   44  ll
+   45  id
+   46  whoami
+   47  adduser cahdna
+   48  id cahdna
+   49  cd /home/cahdna
+   50  ll
+   51  pwd
+   52  adduser chandan
+   53  cd /home/
+   54  ll
+   55  cd 
+   56  cd ../
+   57  ll
+   58   
+   59  cd /bqq
+   60  cd /bin
+   61  ll | grep ls
+   62  cd /sbin
+   63  ll | grep add
+   64  su - chandan 
+   65  cd /proc/
+   66  ll
+   67  cd /mnt/
+   68  ll
+   69  cat /etc/os-release 
+   70  cat /etc/ssh/sshd_config
+   71  .
+   72  cd /home/
+   73  ll
+   74  su - chandan 
+   75  cd
+   76  id
+   77  touch file.txt
+   78  touch abc{1..100}.txt
+   79  ll
+   80  cat > file.txt
+   81  cat file.txt 
+   82  vi file.txt 
+   83  vim file.txt 
+   84  echo "i have done" > new.ttx
+   85  cat new.ttx 
+   86  echo > file.txt 
+   87  cat file.txt 
+   88  rm file.txt 
+   89  ll 
+   90  mkdir 
+   91  man --help
+   92  man ls
+   93  ls 
+   94  ls -l
+   95  ls -lll
+   96  ll
+   97  cat .vimrc 
+   98  rm -rf * 
+   99  ll
+  100  ls
+  101  ll
+  102  ls -lA
+  103  touch ..file.txt
+  104  ls -lA
+  105  fallocate -l 2G file.txt
+  106  ll -ltr
+  107  man fallocate
+  108  ll -ltr
+  109  ll -h
+  110  rm file.txt 
+  111  ll
+  112  ll -d /root/
+  113  ll -d /opt/
+  114  ls -li
+  115  ls -i
+  116  ll
+  117  touch file.txt
+  118  ll
+  119  ll -i
+  120  cd /s
+  121  cd /sbin
+  122  ll
+  123  pwd
+  124  ll | nl
+  125  ll | grep apt
+  126  ll
+  127  which apt
+  128  which ls
+  129  cd /usr/bin/
+  130  ll | grep apt
+  131  ll | grep ls
+  132  cd
+  133  man mkdir 
+  134  mkdir -v d1
+  135  mkdir  d1/d2/d3/d4
+  136  mkdir  -p d1/d2/d3/d4
+  137  man mkdir 
+  138  pwd
+  139  ll -R 
+  140  ll -R d1/
+  141  touch d1/d2/d3/d4/file{1..100}.txt
+  142  ll d1/d2/d3/d4/file{1..100}.txt
+  143  mkdir root
+  144  cd root/
+  145  ll
+  146  cd
+  147  ll
+  148  cd root/
+  149  pwd
+  150  cd
+  151  man rm 
+  152  rm file.txt 
+  153  vim file.xtx
+  154  rm -f file.xtx 
+  155  ll
+  156  rm d1/
+  157  rm -f d1/
+  158  rm -rf d1/
+  159  mkdir -p d1/d2/d3
+  160  ll
+  161  rm ..file.txt 
+  162  touch file.txt
+  163  ll
+  164  pwd
+  165  man  cp
+  166  cp file.txt d1/
+  167  ll d1/
+  168  cp -r d1/ /opt/
+  169  cd /opt/
+  170  ll
+  171  ll -R d1/
+  172  cd
+  173  ll
+  174  chown chandan:chandan file.txt 
+  175  ll
+  176  cp -pr file.txt /tmp/
+  177  ll /tmp/
+  178  pwd
+  179  ll 
+  180  ll /tmp/
+  181  date 
+  182  cp -pr file.txt /bin
+  183  ll /bin
+  184  ll /usr/bin/
+  185  ll /usr/bin/ | grep file.txt 
+  186  date 
+  187  rm /tmp/file.txt 
+  188  cp  file.txt /tmp/
+  189  ll /tmp/
+  190  man cp 
+  191  cp --help
+  192  rm  /tmp/file.txt 
+  193  mv file.txt /tmp/
+  194  ll
+  195  ll /tmp/
+  196  man mv
+  197  ll /opt/
+  198  mv /opt/d1/ /tmp/
+  199  ll /opt/
+  200  ll /tmp/
+  201  history 
+  202  man wc
+  203  wc -l
+  204  ll
+  205  vim file.txt
+  206  wc file.txt 
+  207  cat -n file.txt 
+  208  cat  file.txt | nl
+  209  cat file.txt 
+  210  cat file.txt | nl
+  211  cat file.txt  > file2.txt
+  212  cat file2.txt 
+  213  vim file2.txt 
+  214  cat -n file2.txt 
+  215  cat -S file2.txt 
+  216  cat -s file2.txt 
+  217  cat -s file2.txt  | nl
+  218  cat -ns file2.txt 
+  219  cat -T /etc/hosts
+  220  man wc
+  221  cat -n file.txt 
+  222  wc -l  file.txt 
+  223  wc -lc  file.txt 
+  224  ll
+  225  mkdir d1
+  226  ll
+  227  cd /dev/
+  228  ll
+  229  cd
+  230  history 
+  231  history  > practice1.txt
+  232  cat -n practice1.txt 
+  233  mkdir practice
+  234  cd practice/
+  235  L
+  236  ll
+  237  echo "practice" >> README.md
+  238  git init
+  239  git add README.md
+  240  git commit -m "first commit"
+  241   git branch -M master
+  242  git remote add origin https://github.com/Chandandhani/practice_repo.git 
+  243  git push -u origin master
+  244  .
+  245  mv ../practice1.txt .
+  246  ll
+  247  git add .
+  248  git commit -m "new"
+  249  git push
+  250  kubectl get nodes
+  251  free -h
+  252  ssh kworker1 
+  253  ll
+  254  vim file2.txt 
+  255  man grep
+  256  grep "have" file2.txt 
+  257  ll
+  258  rm file2.txt 
+  259  ll
+  260  cat file.txt 
+  261  vim file.txt 
+  262  grep -i "have" file2.txt 
+  263  grep -i "have" file.txt 
+  264  vim file.txt 
+  265  grep -i "have" file.txt 
+  266  vim file.txt 
+  267  grep -in "good" file.txt 
+  268  grep -ic "good" file.txt 
+  269  vim file.txt 
+  270  grep -ic "good" file.txt 
+  271  grep --help
+  272  grep -ic "good" file.txt 
+  273  grep -i "good" file.txt 
+  274  grep -i "good" file.txt  | grep -v grep
+  275  grep -iv "good" file.txt  
+  276  top
+  277  ps -ef | grep root
+  278  ps -ef | grep root | grep -v grep
+  279  grep -i "good" file.txt  | grep -v grep
+  280  grep -i "good" file.txt  
+  281  grep -vi "good" file.txt  
+  282  ps -ef | grep root 
+  283  ps -ef | grep root  | nl
+  284  ps -ef | grep root  |grep -v grep |  nl
+  285  vim file.txt 
+  286  grep -A 3 "HAVE" file.txt 
+  287  grep -B 3 "HAVE" file.txt 
+  288  grep -C 3 "HAVE" file.txt 
+  289  man grep 
+  290  grep -f "HAVE" .
+  291  grep -f "HAVE"
+  292  man grep 
+  293  grep -f "HAVE" file.txt 
+  294  grep -l "HAVE" .
+  295  grep -l "HAVE" *
+  296  grep -f "HAVE" *
+  297  vim file1.txt
+  298  grep -f "HAVE" *
+  299  grep -l "HAVE" *
+  300  grep -w "HAVE" * 
+  301  grep -o "HAVE" * 
+  302  grep -o "HAVE" file.txt 
+  303  cd /etc/ssh/
+  304  grep "^#" sshd_config
+  305  grep "^#" sshd_config | nl
+  306  grep "^#" sshd_config
+  307  grep "os$" sshd_config
+  308  cd
+  309  vim file2
+  310  vim file.txt 
+  311  grep "os$" file.txt 
+  312  vim file.txt 
+  313  grep "os$" file.txt 
+  314  cat /etc/ssh/sshd_config
+  315  grep -iR "PubkeyAuthentication" /etc/ssh/*
+  316  grep -iR "PubkeyAuthentication" /etc/ssh/
+  317  grep -inR "PubkeyAuthentication" /etc/ssh/
+  318  grep -icR "PubkeyAuthentication" /etc/ssh/
+  319  grep -inR "PubkeyAuthentication" /etc/ssh/
+  320  grep -e "HAVE" -e "os" file.txt 
+  321  egrep  "HAVE|have" file.txt 
+  322  more  file.txt 
+  323  more  file.txt | nl
+  324  vim file.txt 
+  325  more  file.txt | nl
+  326  more  file.txt 
+  327  less file.txt 
+  328  less file.txt | nl
+  329  less file.txt 
+  330  less file.txt | nl
+  331  head file.txt 
+  332  head file.txt  | nl
+  333  head -n 12 file.txt  
+  334  head -n 15 file.txt  
+  335  tail file.txt 
+  336  tail file.txt | nl 
+  337  tail -n 200 file.txt 
+  338  tail -n 20 file.txt 
+  339  vim 
+  340  vim file.txt 
+  341  vim .vimrc
+  342  vim file.txt 
+  343  vim .vimrc
+  344  vim file.txt 
+  345  vim .vimrc
+  346  vim file.txt 
+  347  vim .vimrc 
+  348  vim file.txt 
+  349  vim .vimrc 
+  350  vim file.txt 
+  351  vim .vimrc 
+  352  vim file.txt 
+  353  vim .vimrc 
+  354  vim file.txt 
+  355  vim .vimrc 
+  356  nano  file.txt 
+  357  cat file.txt
+  358  vim file.txt
+  359  cat file.txt
+  360  nano  file.txt
+  361  cat file.txt
+  362  man find
+  363  find / name -f "file.txt"
+  364  find / name  "sshd_config"
+  365  ll
+  366  find / name -f "file.txt"
+  367  find / name  "sshd_config"
+  368  find / name  "sshd_config" | grep "sshd_config"
+  369  find ./ name "file.txt"
+  370  find ./root  name "file.txt"
+  371  find /root  name "file.txt"
+  372  find /root  -name "file.txt"
+  373  find ./ -name "file.txt"
+  374  man rm 
+  375  find ./ -name "file.txt" -exec rm -i {} \;
+  376  touch abc.txt
+  377  ll
+  378  rm abc.txt 
+  379  touch abc.txt
+  380  find ./ -name "abc.txt" -exec rm -i {} \;
+  381  find /root -name "abc.txt" -exec rm -i {} \;
+  382  cd /opt/
+  383  ll
+  384  mkdir -p d1/d2
+  385  cd d1/d2
+  386  ll
+  387  echo "I have done" > file1.txt file2.txt
+  388  ll
+  389  cat file1.txt 
+  390  vim file1.txt 
+  391  tee  "I have done" > file1.txt file2.txt
+  392  ll
+  393  cat file1.txt 
+  394  rm -rf * 
+  395  ll
+  396  tee --help
+  397  tee -a "I have done" >> file1.txt file2.txt 
+  398  ll
+  399  rm -f * 
+  400  ll
+  401  tee -a "I have done" > file1.txt file2.txt 
+  402  ll
+  403  rm -rf * 
+  404  ll
+  405  echo "I have" | tee -a file1.txt file2.txt
+  406  ll
+  407  cat file1.txt 
+  408  vim -o file1.txt file2.txt 
+  409  vim -O file1.txt file2.txt 
+  410  vim file1.txt 
+  411  cd
+  412  history 
+  413  history > practice2.txt
+  414  ll
+  415  cd practice/
+  416  ll
+  417  mv ../practice2.txt .
+  418  git add practice2.txt 
+  419  git commit -m "added new"
+  420  git push 
+  421  mkdir soumya
+  422  cd soumya/
+  423  ll -a
+  424  git init 
+  425  ll
+  426  cd .git/
+  427  ll
+  428  cd branches/
+  429  ll
+  430  cd ../
+  431  ll
+  432  cd hooks/
+  433  ll
+  434  cd ..
+  435  ll
+  436  cd
+  437  cd s
+  438  cd soumya/
+  439  ll
+  440  echo "# soumya_repo" >> README.md
+  441  ll
+  442  cat README.md 
+  443  git init
+  444  git add README.md
+  445  git commit -m "first commit"
+  446  git config --global
+  447  git config --global --edit 
+  448  git commit -m "first commit"
+  449  git status
+  450  git branch -M master
+  451  git branch --all
+  452  git remote add origin https://github.com/Chandandhani/soumya_repo.git
+  453  git config --list
+  454  git push -u origin master
+  455  git --help
+  456  cd'
+
+  457  cd
+  458  cd practice/
+  459  ll
+  460  rm -f * 
+  461  ll
+  462  git clone https://github.com/Chandandhani/soumya_repo.git
+  463  ll
+  464  cd soumya_repo/
+  465  l
+  466  ll
+  467  git branch --all
+  468  git --help
+  469  git branch practice
+  470  git branch --all
+  471  git checkout practice 
+  472  git branch --all
+  473  touch file.txt
+  474  vim file.txt 
+  475  git status 
+  476  git log
+  477  git add file.txt 
+  478  git status 
+  479  git commit -m "added new file.txt"
+  480  history 
+  481  git push -u origin practice
+  482  history '
+  483  history 
+  484  git branch --all
+  485  git branch -d practice
+  486  git checkout master
+  487  git branch -d practice
+  488  git branch --all
+  489  git checkout -b test
+  490  git branch --all
+  491  echo "New created" >> abc.txt
+  492  git status 
+  493  git -Am "new "abc.txt 
+  494  git -Am "new" abc.txt 
+  495  git -am "new" abc.txt 
+  496  git add abc.txt 
+  497  git commit -m "new"
+  498  git push -u origin test 
+  499  l
+  500  ll
+  501  git branch --all
+  502  cat abc.txt 
+  503  git checkout master
+  504  git --help
+  505  git merge test 
+  506  hisgtory 
+  507  history 
+  508  git push -u origin master
+  509  git fetch 
+  510  git status
+  511  git branch --all 
+  512  git push -u origin master
+  513  git pull
+  514  git status
+  515  git push -u origin master
+  516  cd ..
+  517  ll
+  518  rm -rf soumya_repo/
+  519  git clone https://github.com/Chandandhani/soumya_repo.git
+  520  cd soumya_repo/
+  521  ll
+  522  history 
+  523  git branch --all
+  524  git checkout -b test 
+  525  echo "# This is new comment" >> abc.txt
+  526  git status 
+  527  git branch --all
+  528  git add .
+  529  git branch --all
+  530  git status 
+  531  git commit -m "added new abc.txt"
+  532  git checkout master
+  533  git merge test
+  534  git status 
+  535  git push -u origin master
+  536  git branch --all
+  537  history 
+  538  git branch -d test 
+  539  git branch --all
+  540  git fetch 
+  541  git merge
+  542  ll
+  543  cat abc.txt 
+  544  ll
+  545  cat file.txt 
+  546  cat abc.txt 
+  547  git pull 
+  548  cat file.txt 
+  549  vim abc.txt 
+  550  git add .
+  551  git commit -m "asdda"
+  552  git push
+  553  git push -u origin master
+  554  git pull
+  555  git status 
+  556  ll
+  557  cat abc.txt 
+  558  git push -u origin master
+  559  git --help
+  560  git rebase --help
+  561  git --help
+  562  for i in {1..10;}
+  563  for i in {1..10}; do echo "chandan"; done
+  564  A=2
+  565  B=
+  566  B=3
+  567  c=$((A+B))
+  568  echo $c
+  569  cd ..
+  570  ll
+  571  rm -rf soumya_repo/
+  572  ll
+  573  git clone --mirror https://github.com/Chandandhani/soumya_repo.git
+  574  ll
+  575  cd soumya_repo.git/
+  576  ll
+  577  git push https://github.com/Chandandhani/isha.git --mirror
+  578  git pull
+  579  git status 
+  580  git push https://github.com/Chandandhani/isha.git --mirror
+  581  history 
+  582  cd
+  583  history  > git.txt
